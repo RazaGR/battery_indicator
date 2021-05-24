@@ -6,14 +6,14 @@ homepage: https://github.com/debuggerx01/battery_indicator
 dependencies:
   flutter:
     sdk: flutter
-  battery: '>=1.0.11 <2.0.0'
+  battery: ^2.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=0.1.4 <2.0.0"
 
 # For information on the generic Dart part of this file, see the

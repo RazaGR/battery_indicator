@@ -36,7 +36,7 @@ class BatteryIndicator extends StatefulWidget {
   final double size;
 
   /// battery value font size, default to null
-  final double percentNumSize;
+  final double? percentNumSize;
 
   ///boolean to choose from where to obtain the value of the battery
   ///if it is true, the indicator will update in base of the phone battery,
@@ -196,7 +196,7 @@ class BatteryIndicatorPainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
     return (oldDelegate as BatteryIndicatorPainter).batteryLv != batteryLv ||
-        (oldDelegate as BatteryIndicatorPainter).mainColor != mainColor;
+        oldDelegate.mainColor != mainColor;
   }
 
   get fixedBatteryLv => batteryLv < 10 ? 4 + batteryLv / 2 : batteryLv;
